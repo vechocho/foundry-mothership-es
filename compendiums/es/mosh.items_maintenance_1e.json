@@ -1,11 +1,11 @@
 {
-	"label": "Maintenance Issues (1e)",
+	"label": "Problemas de mantenimiento (1e)",
 	"entries": {
 		"Miscalibrated Thruster Gimbal System.": {
-			"name": "Miscalibrated Thruster Gimbal System."
+			"name": "Mecanismo de orientación de los propulsores descalibrado."
 		},
 		"Damaged floor pannelling.": {
-			"name": "Damaged floor pannelling."
+			"name": "Paneles del suelo dañados."
 		},
 		"Damaged communications antenna.": {
 			"name": "Damaged communications antenna."
