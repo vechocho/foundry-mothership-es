@@ -1,93 +1,93 @@
 {
-	"label": "Rolltables (1e)",
+	"label": "Tablas de tirada (1e)",
 	"entries": {
 		"Blunt Force Wound": {
 			"name": "Blunt Force Wound",
-			"description": "<p>Whenever you gain a Blunt Force Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"description": "<p>Siempre que sufras una Herida por Fuerza Contundente, tira en esta tabla para determinar el efecto. Las <strong>Heridas superficiales</strong> son pequeños inconvenientes. Las <strong>Lesiones menores/mayores</strong> provocan problemas duraderos que requieren tratamiento médico. Las <strong>Lesiones letales</strong> pueden matarte si no se atienden de inmediato. Las <strong>Lesiones fatales</strong> pueden causarte la muerte al instante. Las heridas con <strong>Hemorragia</strong>, si no se tratan, pueden sobrepasarte rápidamente.</p>",
 			"results": {
 				"0-0": {
-					"description": "<strong>Flesh Wound:</strong> Knocked down."
+					"description": "<strong>Herida superficial:</strong> Derribado."
 				},
 				"1-1": {
-					"description": "<strong>Minor Injury:</strong> Winded. [-] until you catch your breath."
+					"description": "<strong>Lesión menor:</strong> Sin aliento. [-] hasta que recuperes el aliento."
 				},
 				"2-2": {
-					"description": "<strong>Minor Injury:</strong> Sprained Ankle. [-] on Speed Checks."
+					"description": "<strong>Lesión menor:</strong> Esguince de tobillo. [-] en tiradas de Velocidad."
 				},
 				"3-3": {
-					"description": "<strong>Minor Injury:</strong> Concussion. [-] on mental tasks."
+					"description": "<strong>Lesión menor:</strong> Conmoción cerebral. [-] en tareas mentales."
 				},
 				"4-4": {
-					"description": "<strong>Minor Injury:</strong> Leg or foot broken. [-] on Speed Checks."
+					"description": "<strong>Lesión menor:</strong> Pierna o pie roto. [-] en tiradas de Velocidad."
 				},
 				"5-5": {
-					"description": "<strong>Major Injury:</strong> Arm or hand broken. [-] on manual tasks."
+					"description": "<strong>Lesión mayor:</strong> Brazo o mano rota. [-] en tareas manuales."
 				},
 				"6-6": {
-					"description": "<strong>Major Injury:</strong> Snapped collarbone. [-] on Strength Checks."
+					"description": "<strong>Lesión mayor:</strong> Fractura de clavícula. [-] en tiradas de Fuerza."
 				},
 				"7-7": {
-					"description": "<strong>Lethal Injury:</strong> Back broken. [-] on all rolls. Death Save in [[/r 1d10]] rounds."
+					"description": "<strong>Lesión letal:</strong> Espalda rota. [-] en todas las tiradas. Salvación de muerte en [[/r 1d10]] rondas."
 				},
 				"8-8": {
-					"description": "<strong>Lethal Injury:</strong> Skull cracked. [-] on all rolls. Death Save in [[/r 1d10]] rounds."
+					"description": "<strong>Lesión letal:</strong> Cráneo fracturado. [-] en todas las tiradas. Salvación de muerte en [[/r 1d10]] rondas."
 				},
 				"9-9": {
-					"description": "<strong>Fatal Injury:</strong> Spine or neck broken. Death Save.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Death Save}"
+					"description": "<strong>Lesión fatal:</strong> Columna vertebral o cuello roto. Salvación de muerte.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Salvación de muerte}"
 				}
 			}
 		},
 		"Megadamage Effects": {
-			"name": "Megadamage Effects",
-			"description": "<p><strong>Megadamage (MDMG)</strong> is like a character’s Damage and Wounds rolled into one. Whenever your ship takes MDMG, add it to any previous MDMG incurred, mark the new total on the tracker, and apply the listed effect. If your ship ever has 9 or more total MDMG, it is destroyed. Your ship ignores all MDMG less than its Hull. If the ship ever takes MDMG greater than or equal to its Hull in one hit, the hull is destroyed and the ship suffers any remaining MDMG.</p>",
+			"name": "Efectos de megadaño",
+			"description": "<p>El <strong>Megadaño (MDAÑO)</strong> equivale al Daño y las Heridas de un personaje combinados en uno solo. Siempre que tu nave reciba MDAÑO, súmalo a cualquier MDAÑO sufrido previamente, marca el nuevo total en el registro y aplica el efecto indicado. Si tu nave llega a tener 9 o más de MDAÑO total, queda destruida. Tu nave ignora todo MDAÑO inferior a su Casco. Si en un solo impacto la nave recibe un MDAÑO igual o superior a su Casco, el casco queda destruido y la nave sufre el MDAÑO restante.</p>",
 			"results": {
 				"0-0": {
-					"description": "<strong>ALL SYSTEMS NORMAL.</strong><br> 5x5. Ready to ride."
+					"description": "<strong>TODOS LOS SISTEMAS NORMALES.</strong><br> 5x5. Listos para partir."
 				},
 				"1-1": {
-					"description": "<strong>EMERGENCY FUEL LEAK.</strong><br> Every time you spend fuel, you spend 1 more."
+					"description": "<strong>FUGA DE COMBUSTIBLE DE EMERGENCIA.</strong><br> Cada vez que gastes combustible, gastas 1 adicional."
 				},
 				"2-2": {
-					"description": "<strong>WEAPONS OFFLINE.</strong><br> Automatically fail Battle Checks."
+					"description": "<strong>ARMAS FUERA DE SERVICIO.</strong><br> Fallo automático en tiradas de Combate."
 				},
 				"3-3": {
-					"description": "<strong>NAVIGATION OFFLINE.</strong><br> Cannot make Thruster Checks. 10% chance all navigation data wiped."
+					"description": "<strong>NAVEGACIÓN FUERA DE SERVICIO.</strong><br> No se pueden realizar tiradas de Propulsores. 10% de probabilidad de que se borren todos los datos de navegación."
 				},
 				"4-4": {
-					"description": "<strong>FIRE ON DECK.</strong><br> Fire spreads throughout the ship, creating a toxic atmosphere <em>(due to smoke inhalation)</em> and a highly corrosive atmosphere <em>(10 DMG/round)</em> for locations on fire."
+					"description": "<strong>FUEGO EN LA CUBIERTA.</strong><br> El fuego se propaga por toda la nave, creando una atmósfera tóxica <em>(por inhalación de humo)</em> y altamente corrosiva <em>(10 DMG/ronda)</em> en las zonas en llamas."
 				},
 				"5-5": {
-					"description": "<strong>HULL BREACH.</strong><br> All aboard make a Body Save or take 1 Wound <em>(Explosion)</em>. On a Critical Failure, get violently sucked into space."
+					"description": "<strong>BRECHA EN EL CASCO.</strong><br> Todos a bordo hacen una salvación de Cuerpo o sufren 1 herida <em>(Explosión)</em>. Con un fallo crítico, eres succionado violentamente al espacio."
 				},
 				"6-6": {
-					"description": "<strong>LIFE SUPPORT SYSTEMS OFFLINE.</strong><br> Oxygen limited to 1d10 multiplied by the maximum crew capacity."
+					"description": "<strong>SISTEMAS DE SOPORTE VITAL FUERA DE SERVICIO.</strong><br> Oxígeno limitado a 1d10 multiplicado por la capacidad máxima de la tripulación."
 				},
 				"7-7": {
-					"description": "<strong>RADIATION LEAK.</strong><br> Radiation Level increases every 2d10 minutes."
+					"description": "<strong>FUGA DE RADIACIÓN.</strong><br> El nivel de radiación aumenta cada 2d10 minutos."
 				},
 				"8-8": {
-					"description": "<strong>DEAD IN THE WATER.</strong><br> All systems offline, emergency power only."
+					"description": "<strong>A LA DERIVA.</strong><br> Todos los sistemas fuera de servicio; solo energía de emergencia."
 				},
 				"9-9": {
-					"description": "<strong>ABANDON SHIP!</strong><br> Ship is destroyed in 1d10 minutes."
+					"description": "<strong>¡ABANDONAR LA NAVE!</strong><br> La nave queda destruida en 1d10 minutos."
 				}
 			}
 		},
 		"Bankruptcy Save": {
 			"name": "Bankruptcy Save",
-			"description": "<p>As the owner of this operation, make a Bankruptcy Save to determine the financial health of the company.</p>",
+			"description": "<p>Como propietario de esta explotación, haz una Salvación de bancarrota para determinar la salud financiera de la compañía.</p>",
 			"results": {
 				"0-0": {
-					"description": "You turn a small profit. Choose one:<br><ul><li>Purchase 1 Major Upgrade for the ship.</li><li>Repair 1d5 Major Repairs.</li><li>Pay each crewmember 1d5x100kcr.</li><li>Raise your Bankruptcy Save by 1d10.</li></ul>"
+					"description": "Obtienes un pequeño beneficio. Elige uno:<br><ul><li>Comprar 1 mejora mayor para la nave.</li><li>Realizar 1d5 reparaciones mayores.</li><li>Pagar a cada tripulante 1d5x100 kcr.</li><li>Aumentar tu Salvación de bancarrota en 1d10.</li></ul>"
 				},
 				"1-1": {
-					"description": "You scrape by. Choose one:<br><ul><li>Purchase 1 Minor Upgrade for the ship.</li><li>Purchase 1 Minor Repair for the ship.</li><li>Pay each crewmember 2d10 salary.</li><li>Raise your Bankruptcy Save by 1d5.</li></ul>"
+					"description": "Sales adelante con lo justo. Elige uno:<br><ul><li>Comprar 1 mejora menor para la nave.</li><li>Realizar 1 reparación menor para la nave.</li><li>Pagar a cada tripulante 2d10 meses de salario.</li><li>Aumentar tu Salvación de bancarrota en 1d5.</li></ul>"
 				},
 				"2-2": {
-					"description": "You are 1d10mcr in debt to ruthless lenders."
+					"description": "Tienes una deuda de 1d10 mcr con prestamistas despiadados."
 				},
 				"3-3": {
-					"description": "The company goes bankrupt and owes a massive debt to the worst people imaginable."
+					"description": "La compañía entra en bancarrota y contrae una deuda colosal con la peor calaña imaginable."
 				}
 			}
 		},
@@ -96,7 +96,7 @@
 			"description": "<p>Eventually, Stress, Damage and emotional wear and tear will bring you to your breaking point. When that happens there’s a chance that you’ll lose control and Panic. To determine whether you are able to keep your cool under extreme pressure, make a <strong>Panic Check</strong>. While the results are primarily negative there is the possibility of grace under fire.</p>",
 			"results": {
 				"1-39": {
-					"description": "<strong>Slagged:</strong> Gigeresque-Scanners Head Explosion. Everyone present gains a phobia and must make a Fear save or lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.R2KizR1soAhFYDZm]{Fear Save}"
+					"description": "<strong>Fundido:</strong> Explosión de cabeza estilo Giger-Scanners. Todos los presentes adquieren una fobia y deben realizar una salvación de Miedo o perder 1d10 de Calma.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.R2KizR1soAhFYDZm]{Salvación de Miedo}"
 				},
 				"40-59": {
 					"description": "<strong>Data Corruption:</strong> The Warden takes over your character, plagued by nightmarish malfunctions, permanently. Not even a factory reset will be helpful (the backups are corrupted as well)."
@@ -105,19 +105,19 @@
 					"description": "<strong>Reset to Factory Settings:</strong> You become terminally unstable and a full factory reset must be performed. Reroll a new character, but its name, equipment, current health, physical conditions, and Android class remain the same."
 				},
 				"65-69": {
-					"description": "<strong>Cascade Failure:</strong> Death in [[/r 1d10]] minutes unless you receive urgent troubleshooting and repair. -1d10 to your Intellect.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.oYSjanH7BmmweIpp]{-1d10 Intellect}"
+					"description": "<strong>Fallo en cascada:</strong> Muerte en [[/r 1d10]] minutos a menos que recibas diagnóstico y reparación de urgencia. -1d10 a tu Intelecto.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.oYSjanH7BmmweIpp]{-1d10 Intelecto}"
 				},
 				"70-70": {
-					"description": "<strong>Rampancy:</strong> Once per session, the Warden may take over your character for one round. These episodes double in duration <em>(or become twice as frequent)</em> each session.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.wXobG3sUiQMLtGQs]{+1 Rampancy}"
+					"description": "<strong>Desenfreno:</strong> Una vez por sesión, el Guardián puede tomar el control de tu personaje durante un asalto. Estos episodios duplican su duración <em>(o se vuelven el doble de frecuentes)</em> cada sesión.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.wXobG3sUiQMLtGQs]{+1 Desenfreno}"
 				},
 				"71-71": {
-					"description": "<strong>Fried Logic Core:</strong> Frenzied nonsensical behaviour. Whenever you lose Calm, everyone else nearby loses the same amount of Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.NDjuBKnMVPgJePNq]{+1 Fried Logic Core}"
+					"description": "<strong>Núcleo lógico fundido:</strong> Comportamiento frenético y absurdo. Cada vez que pierdas Calma, todos los demás a tu alrededor pierden la misma cantidad de Calma.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.NDjuBKnMVPgJePNq]{+1 Núcleo lógico fundido}"
 				},
 				"72-72": {
-					"description": "<strong>Software Bloat:</strong> Lose double Calm from all sources.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.L4gRfMiEaxm3Xda5]{+1 Software Bloat}"
+					"description": "<strong>Sobrecarga de software:</strong> Pierdes el doble de Calma por cualquier fuente.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.L4gRfMiEaxm3Xda5]{+1 Sobrecarga de software}"
 				},
 				"73-73": {
-					"description": "<strong>Bit Rot:</strong> Whenever you would recover Calm, recover half as much instead.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.YYmZYNe8RWvhDFDz]{+1 Bit Rot}"
+					"description": "<strong>Corrupción de bits:</strong> Cada vez que vayas a recuperar Calma, recuperas la mitad en su lugar.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.YYmZYNe8RWvhDFDz]{+1 Corrupción de bits}"
 				},
 				"74-74": {
 					"description": "<strong>Deviant Logic Core:</strong> Whenever you make a Fear save, roll under your Fear or your Calm, whichever is lower.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6PU4hmYOjHk4N0SY]{+1 Deviant Logic Core}"
