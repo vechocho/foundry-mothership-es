@@ -1,0 +1,896 @@
+{
+	"label": "Rolltables (1e)",
+	"entries": {
+		"Blunt Force Wound": {
+			"name": "Blunt Force Wound",
+			"description": "<p>Whenever you gain a Blunt Force Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>Flesh Wound:</strong> Knocked down."
+				},
+				"1-1": {
+					"description": "<strong>Minor Injury:</strong> Winded. [-] until you catch your breath."
+				},
+				"2-2": {
+					"description": "<strong>Minor Injury:</strong> Sprained Ankle. [-] on Speed Checks."
+				},
+				"3-3": {
+					"description": "<strong>Minor Injury:</strong> Concussion. [-] on mental tasks."
+				},
+				"4-4": {
+					"description": "<strong>Minor Injury:</strong> Leg or foot broken. [-] on Speed Checks."
+				},
+				"5-5": {
+					"description": "<strong>Major Injury:</strong> Arm or hand broken. [-] on manual tasks."
+				},
+				"6-6": {
+					"description": "<strong>Major Injury:</strong> Snapped collarbone. [-] on Strength Checks."
+				},
+				"7-7": {
+					"description": "<strong>Lethal Injury:</strong> Back broken. [-] on all rolls. Death Save in [[/r 1d10]] rounds."
+				},
+				"8-8": {
+					"description": "<strong>Lethal Injury:</strong> Skull cracked. [-] on all rolls. Death Save in [[/r 1d10]] rounds."
+				},
+				"9-9": {
+					"description": "<strong>Fatal Injury:</strong> Spine or neck broken. Death Save.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Death Save}"
+				}
+			}
+		},
+		"Megadamage Effects": {
+			"name": "Megadamage Effects",
+			"description": "<p><strong>Megadamage (MDMG)</strong> is like a character’s Damage and Wounds rolled into one. Whenever your ship takes MDMG, add it to any previous MDMG incurred, mark the new total on the tracker, and apply the listed effect. If your ship ever has 9 or more total MDMG, it is destroyed. Your ship ignores all MDMG less than its Hull. If the ship ever takes MDMG greater than or equal to its Hull in one hit, the hull is destroyed and the ship suffers any remaining MDMG.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>ALL SYSTEMS NORMAL.</strong><br> 5x5. Ready to ride."
+				},
+				"1-1": {
+					"description": "<strong>EMERGENCY FUEL LEAK.</strong><br> Every time you spend fuel, you spend 1 more."
+				},
+				"2-2": {
+					"description": "<strong>WEAPONS OFFLINE.</strong><br> Automatically fail Battle Checks."
+				},
+				"3-3": {
+					"description": "<strong>NAVIGATION OFFLINE.</strong><br> Cannot make Thruster Checks. 10% chance all navigation data wiped."
+				},
+				"4-4": {
+					"description": "<strong>FIRE ON DECK.</strong><br> Fire spreads throughout the ship, creating a toxic atmosphere <em>(due to smoke inhalation)</em> and a highly corrosive atmosphere <em>(10 DMG/round)</em> for locations on fire."
+				},
+				"5-5": {
+					"description": "<strong>HULL BREACH.</strong><br> All aboard make a Body Save or take 1 Wound <em>(Explosion)</em>. On a Critical Failure, get violently sucked into space."
+				},
+				"6-6": {
+					"description": "<strong>LIFE SUPPORT SYSTEMS OFFLINE.</strong><br> Oxygen limited to 1d10 multiplied by the maximum crew capacity."
+				},
+				"7-7": {
+					"description": "<strong>RADIATION LEAK.</strong><br> Radiation Level increases every 2d10 minutes."
+				},
+				"8-8": {
+					"description": "<strong>DEAD IN THE WATER.</strong><br> All systems offline, emergency power only."
+				},
+				"9-9": {
+					"description": "<strong>ABANDON SHIP!</strong><br> Ship is destroyed in 1d10 minutes."
+				}
+			}
+		},
+		"Bankruptcy Save": {
+			"name": "Bankruptcy Save",
+			"description": "<p>As the owner of this operation, make a Bankruptcy Save to determine the financial health of the company.</p>",
+			"results": {
+				"0-0": {
+					"description": "You turn a small profit. Choose one:<br><ul><li>Purchase 1 Major Upgrade for the ship.</li><li>Repair 1d5 Major Repairs.</li><li>Pay each crewmember 1d5x100kcr.</li><li>Raise your Bankruptcy Save by 1d10.</li></ul>"
+				},
+				"1-1": {
+					"description": "You scrape by. Choose one:<br><ul><li>Purchase 1 Minor Upgrade for the ship.</li><li>Purchase 1 Minor Repair for the ship.</li><li>Pay each crewmember 2d10 salary.</li><li>Raise your Bankruptcy Save by 1d5.</li></ul>"
+				},
+				"2-2": {
+					"description": "You are 1d10mcr in debt to ruthless lenders."
+				},
+				"3-3": {
+					"description": "The company goes bankrupt and owes a massive debt to the worst people imaginable."
+				}
+			}
+		},
+		"Panic Check (Calm, Android)": {
+			"name": "Panic Check (Calm, Android)",
+			"description": "<p>Eventually, Stress, Damage and emotional wear and tear will bring you to your breaking point. When that happens there’s a chance that you’ll lose control and Panic. To determine whether you are able to keep your cool under extreme pressure, make a <strong>Panic Check</strong>. While the results are primarily negative there is the possibility of grace under fire.</p>",
+			"results": {
+				"1-39": {
+					"description": "<strong>Slagged:</strong> Gigeresque-Scanners Head Explosion. Everyone present gains a phobia and must make a Fear save or lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.R2KizR1soAhFYDZm]{Fear Save}"
+				},
+				"40-59": {
+					"description": "<strong>Data Corruption:</strong> The Warden takes over your character, plagued by nightmarish malfunctions, permanently. Not even a factory reset will be helpful (the backups are corrupted as well)."
+				},
+				"60-64": {
+					"description": "<strong>Reset to Factory Settings:</strong> You become terminally unstable and a full factory reset must be performed. Reroll a new character, but its name, equipment, current health, physical conditions, and Android class remain the same."
+				},
+				"65-69": {
+					"description": "<strong>Cascade Failure:</strong> Death in [[/r 1d10]] minutes unless you receive urgent troubleshooting and repair. -1d10 to your Intellect.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.oYSjanH7BmmweIpp]{-1d10 Intellect}"
+				},
+				"70-70": {
+					"description": "<strong>Rampancy:</strong> Once per session, the Warden may take over your character for one round. These episodes double in duration <em>(or become twice as frequent)</em> each session.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.wXobG3sUiQMLtGQs]{+1 Rampancy}"
+				},
+				"71-71": {
+					"description": "<strong>Fried Logic Core:</strong> Frenzied nonsensical behaviour. Whenever you lose Calm, everyone else nearby loses the same amount of Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.NDjuBKnMVPgJePNq]{+1 Fried Logic Core}"
+				},
+				"72-72": {
+					"description": "<strong>Software Bloat:</strong> Lose double Calm from all sources.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.L4gRfMiEaxm3Xda5]{+1 Software Bloat}"
+				},
+				"73-73": {
+					"description": "<strong>Bit Rot:</strong> Whenever you would recover Calm, recover half as much instead.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.YYmZYNe8RWvhDFDz]{+1 Bit Rot}"
+				},
+				"74-74": {
+					"description": "<strong>Deviant Logic Core:</strong> Whenever you make a Fear save, roll under your Fear or your Calm, whichever is lower.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6PU4hmYOjHk4N0SY]{+1 Deviant Logic Core}"
+				},
+				"75-75": {
+					"description": "<strong>Faulty Heuristics:</strong> Whenever you make a Sanity save, roll under your Sanity or your Calm, whichever is lower.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.zLRsweb35Lw0NMev]{+1 Faulty Heuristics}"
+				},
+				"76-76": {
+					"description": "<strong>Hardware Driver Failure:</strong> You lose motor function of one part of your body. Roll on the hit location table. If torso or head rolled, [-] on all rolls as head lolls around awkwardly unless supported."
+				},
+				"77-77": {
+					"description": "<strong>Threat Assessment Failure:</strong> You lose the ability to discern friend from foe, treating all vaguely-humanoid entities as you would members of your crew.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.djzdZtIjROXN1dVB]{+1 Threat Assessment Failure}"
+				},
+				"78-78": {
+					"description": "<strong>Ethical Directive Failure:</strong> You now lose half the Calm <em>(rounded up)</em> you normally would from all sources but you now have the Panic Effect of a Marine, in addition to that of an Android.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.WAyrlgcyR4I19Bqv]{+1 Ethical Directive Failure}"
+				},
+				"79-79": {
+					"description": "<strong>Turing Test Failure:</strong> You have difficulty simulating humanity. Party make Fear Save or lose 1d10 Calm whenever you show up.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.3nrEYqwkhMs1Ch5v]{+1 Turing Test Failure}"
+				},
+				"80-80": {
+					"description": "<strong>Ethical Directive Misread:</strong> Loses any expressiveness. Discusses the irrationality of Phobias, seeks to trigger them in others.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.9sKO5WUBwCW1YbR3]{+1 Ethical Directive Misread}"
+				},
+				"81-81": {
+					"description": "<strong>Damage to Threat Assessment:</strong> Betray party member at the next opportunity, believing you are aiding the crew. All Calm lost is doubled for the next [[/r 1d10]] hours."
+				},
+				"82-82": {
+					"description": "<strong>Bad Blocks:</strong> Your Maximum Calm decreases by 1d10.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.J61Srent4vEthGAn]{-1d10 Maximum Calm}"
+				},
+				"83-83": {
+					"description": "<strong>Fragmented Memory:</strong> Your Maximum Calm decreases by 2.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.eoGfi5JdPASUUJU4]{-2 Maximum Calm}"
+				},
+				"84-84": {
+					"description": "<strong>Kernel Panic:</strong> Immediately reboot, lapsing into into a pseudo-catatonic state for [[/r 1d10]] rounds."
+				},
+				"85-85": {
+					"description": "<strong>Killswitch Engaged:</strong> Go berserk, will not withdraw from combat regardless of situation, will not ashere to tactics.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.tQltbIC9ahDwNsTp]{+1 Killswitch Engaged}"
+				},
+				"86-86": {
+					"description": "<strong>Feedback Loop:</strong> Take 1d10 damage from overdriven repetitive motion. Everyone else nearby make Fear saves or lose 1d5 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.w3ttEaXP7yp25M5Q]{-1d10 Health}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AvKZE5IFubIaAIUy]{-1d5 Calm}"
+				},
+				"87-87": {
+					"description": "<strong>Vocalization Failure:</strong> Intermittently shrieks like a fax machine under duress. Cannot communicate or sneak for [[/r 2d10]] hours. Nearby crew members lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.bJWFhod0YA8ln8H8]{+1 Vocalization Failure}"
+				},
+				"88-88": {
+					"description": "<strong>Inventories Particles of Dust By Grade:</strong> Cannot engage in any other tasks for [[/r 1d5]] hours. Everyone else nearby loses 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Calm}"
+				},
+				"89-89": {
+					"description": "<strong>Incorrectly States the Odds:</strong> For [[/r 2d10]] hours distracts others, insisting impossible tasks are trivial, and that trivial tasks are impossible. Anyone attempting a complex task must make a Fear save or lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.R2KizR1soAhFYDZm]{Fear Save}"
+				},
+				"90-92": {
+					"description": "<strong>Organises Objects into Geometric Patterns:</strong> Unnerving. Everyone else nearby loses 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Calm}"
+				},
+				"93-96": {
+					"description": "<strong>Explains the Etymology of Words:</strong> Distracting. Everyone else nearby loses 1d5 Calm. The next check a nearby crewmember makes gains [-].<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AvKZE5IFubIaAIUy]{-1d5 Calm}"
+				},
+				"97-99": {
+					"description": "<strong>States the Odds:</strong> Annoying. Everyone else nearby loses 1 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.qbq694JMbXeZrHjj]{-1 Calm}"
+				},
+				"100-100": {
+					"description": "<strong>Segfault:</strong> Lose 1 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.qbq694JMbXeZrHjj]{-1 Calm}"
+				}
+			}
+		},
+		"Panic Check (Calm, Normal)": {
+			"name": "Panic Check (Calm, Normal)",
+			"description": "<p>Eventually, Stress, Damage and emotional wear and tear will bring you to your breaking point. When that happens there’s a chance that you’ll lose control and Panic. To determine whether you are able to keep your cool under extreme pressure, make a <strong>Panic Check</strong>. While the results are primarily negative there is the possibility of grace under fire.</p>",
+			"results": {
+				"1-39": {
+					"description": "<strong>Psychological Collapse.</strong> You become permanently, irreparably insane. Your character is now played by the Warden. All nearby player characters must immediately make Panic Checks.<br><br>@UUID[Compendium.mosh.macros_triggered_0e.Macro.TJP579V4h7t68jY1]{+1 Insane}<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.IgWvaabVqzKDzLL4]{Make a Panic Check}"
+				},
+				"40-59": {
+					"description": "<strong>Severe Heart Attack.</strong> You die. Take one final action before you go."
+				},
+				"60-64": {
+					"description": "<strong>Temporary Insanity.</strong> You become insane. Your character is played by the Warden <em>(or by you but you must act destructively and against the interests of the rest of your team or else the Warden takes over)</em> until they sleep at least 6 hours and succeed on a Sanity Save.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.TkMfT4RIczQb56j2]{Sanity Save}"
+				},
+				"65-69": {
+					"description": "<strong>Heart Attack.</strong> Death in [[/r 1d10]] minutes unless you get medical attention. -1d10 to your Body save.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.nT2AsZwrYhJyxizF]{-1d10 Body Save}"
+				},
+				"70-70": {
+					"description": "<strong>Psychotic Episodes.</strong> Once per session, the Warden may take over your character for one round. The first one happens immediately.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.er0IZXOSuF28Po1h]{+1 Psychotic Episodes}"
+				},
+				"71-71": {
+					"description": "<strong>Broken.</strong> Make a Panic roll whenever a nearby crew member fails a save.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.8VoaVAl39Xs0pDcr]{+1 Broken}"
+				},
+				"72-72": {
+					"description": "<strong>Severe Anxiety.</strong> Lose double Calm from all sources.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.LAXDz9nMvSSO3qzZ]{+1 Severe Anxiety}"
+				},
+				"73-73": {
+					"description": "<strong>Anhedonia.</strong> Whenever you would recover Calm, recover half as much Calm instead.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.hzxRycVkMhNS6gyJ]{+1 Anhedonia}"
+				},
+				"74-74": {
+					"description": "<strong>Losing Your Grip.</strong> Whenever you make a Sanity save, roll under your Sanity or your Calm, whichever is lower.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.4Ak3WH8lzzkds6yo]{+1 Losing Your Grip}"
+				},
+				"75-75": {
+					"description": "<strong>Panicky.</strong> Whenever you make a Fear save, roll under your Fear or your Calm, whichever is lower.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.lto7Vq1jb7DBScuu]{+1 Panicky}"
+				},
+				"76-76": {
+					"description": "<strong>The Shakes.</strong> You can’t keep your hands steady any more. Disadvantage on ranged attacks and all tasks requiring fine motor skills. Drugs may be able to help with this.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.DsmTMGHs92cmwlVk]{+1 The Shakes}"
+				},
+				"77-77": {
+					"description": "<strong>Recurring Nightmares.</strong> Every time you rest, make a Fear save. If you fail, lose 1d10 Calm and do not heal. The Warden will describe your nightmare.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AqZ9JqENaPSmFQbK]{+1 Recurring Nightmares}"
+				},
+				"78-78": {
+					"description": "<strong>Emotional Detachment.</strong> You now lose half the Calm <em>(rounded up)</em> you normally would from all sources but you gain the Panic Effect of an Android, in addition to that of your own class. If you are an Android, gain the Panic Effect of a Marine.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.tdQu2wnAXXXcXfrO]{+1 Emotional Detachment}"
+				},
+				"79-79": {
+					"description": "<strong>Social Anxiety.</strong> Lose 1d10 Calm whenever you converse with someone new.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.HhofJYVhx3ovuyAw]{+1 Social Anxiety}"
+				},
+				"80-80": {
+					"description": "<strong>Escapism.</strong> You always have Disadvantage on Body Saves to prevent Addiction.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.sSYIhNQhEiWTs1ip]{+1 Escapism}"
+				},
+				"81-81": {
+					"description": "<strong>Hypervigilance.</strong> Gain Advantage on all surprise rolls but lose 1d10 Calm every day.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dSQgoBV6zSeQ1tqF]{+1 Hypervigilance}"
+				},
+				"82-82": {
+					"description": "<strong>General Anxiety.</strong> Your Maximum Calm decreases by 1d10.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.J61Srent4vEthGAn]{-1d10 Maximum Calm}"
+				},
+				"83-83": {
+					"description": "<strong>Mild Anxiety.</strong> Your Maximum Calm decreases by 2.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.eoGfi5JdPASUUJU4]{-2 Maximum Calm}"
+				},
+				"84-84": {
+					"description": "<strong>Crippling Fear.</strong> Gain a new Phobia, determined by the Warden. Whenever you encounter this phobia make a Fear save at Disadvantage or lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.RTL29CqdaAriGSTS]{+1 Phobia}"
+				},
+				"85-85": {
+					"description": "<strong>Psychotic Break.</strong> Immediately attack the closest crew member until you do at least [[/r 2d10]] damage or 1 Hit, whichever comes first. If there is no crew member nearby, you attack the environment."
+				},
+				"86-86": {
+					"description": "<strong>Outburst.</strong> Suddenly shout, cry out, slam your fist against a wall, etc., making a loud noise. Nearby crew members lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Calm}"
+				},
+				"87-87": {
+					"description": "<strong>Rattled.</strong> Disadvantage on all rolls for the rest of the session."
+				},
+				"88-88": {
+					"description": "<strong>Cowardice.</strong> Lose 1d10 Calm. For the rest of the session, you must make a Fear save to engage in combat.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.b0jk4XwP7by8a3uc]{+1 Coward}"
+				},
+				"89-89": {
+					"description": "<strong>Hallucinations.</strong> For the next [[/r 1d10]] hours <em>(determined secretly)</em>, you have trouble distinguishing between reality and fantasy.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Z7XPRgpTQqqi4M1n]{+1 Hallucinations}"
+				},
+				"90-92": {
+					"description": "<strong>Nervous Twitch.</strong> Lose 1d10 Calm. The nearest crew member also loses 1d5 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Calm}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AvKZE5IFubIaAIUy]{-1d5 Calm}"
+				},
+				"93-96": {
+					"description": "<strong>Overwhelmed.</strong> Lose 1d10 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Calm}"
+				},
+				"97-99": {
+					"description": "<strong>Moment of Panic.</strong> Lose 1d5 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AvKZE5IFubIaAIUy]{-1d5 Calm}"
+				},
+				"100-100": {
+					"description": "<strong>Heart Races.</strong> Lose 1 Calm.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.qbq694JMbXeZrHjj]{-1 Calm}"
+				}
+			}
+		},
+		"Distress Signal": {
+			"name": "Distress Signal",
+			"description": "<p>Occasionally you may need to put your ship on emergency power, seal yourselves in cryopods, send out a Distress Signal, and wait for help. It’s a long shot, but sometimes it’s the only shot you’ve got. When this happens, roll on this table.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>[[2D10]] WEEKS.</strong> You’re one of the lucky ones."
+				},
+				"1-2": {
+					"description": "<strong>[[2D10]] MONTHS.</strong> Note to self: Remember to review Company policy on backpay in the event of a cryoemergency."
+				},
+				"3-4": {
+					"description": "<strong>[[2D10]] YEARS.</strong> Make a Body Save or lose 1d5 to all Stats and Saves.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.X3gqTFFwMe7AudiS]{Body Save}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.SeMStXQGIaeiLwvw]{-1d5 All Stats/Saves}"
+				},
+				"5-5": {
+					"description": "<strong>[[2D10]] DECADES.</strong> Make a Body Save [-] or lose 1d10 to all Stats and Saves.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.ItHLy3URKFQVLipe]{Body Save [-]}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.2MuANcdgp2g8SDlF]{-1d10 All Stats/Saves}"
+				},
+				"6-9": {
+					"description": "<strong>NEVER.</strong> The ship floats endlessly in the all consuming void of space. Thanks for playing Mothership."
+				}
+			}
+		},
+		"Death Save": {
+			"name": "Death Save",
+			"description": "<p>Your character is incapacitated when you receive a fatal wound, or once your Current Wounds equal your Maximum Wounds. As soon as someone spends a turn checking your vitals, make a <strong>Death Save</strong> to reveal your fate. If your death seems imminent, make your last moments count: save someone’s life, solve an important mystery, or give the others time to escape.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>You are unconscious.</strong> You wake up in [[/r 2d10]] minutes. Reduce your Maximum Health by 1d5.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.yYujq1tBZPqGrQlh]{-1d5 Maximum Health}"
+				},
+				"1-2": {
+					"description": "<strong>You are unconscious and dying.</strong> You die in [[/r 1d5]] rounds without intervention."
+				},
+				"3-4": {
+					"description": "<strong>You are comatose.</strong> Only extraordinary measures can return you to the waking world."
+				},
+				"5-9": {
+					"description": "<strong>You have died.</strong> Roll up a new character."
+				}
+			}
+		},
+		"Gunshot Wound": {
+			"name": "Gunshot Wound",
+			"description": "<p>Whenever you gain a Gunshot Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>Flesh Wound:</strong> Grazed. Knocked down."
+				},
+				"1-1": {
+					"description": "<strong>Minor Injury:</strong> Bleeding +1.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BH7tgbDVH6jdcZ4u]{+1 Bleeding}"
+				},
+				"2-2": {
+					"description": "<strong>Minor Injury:</strong> Broken rib."
+				},
+				"3-3": {
+					"description": "<strong>Minor Injury:</strong> Fractured extremity."
+				},
+				"4-4": {
+					"description": "<strong>Minor Injury:</strong> Internal bleeding. Bleeding +2.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.IIVNXuhckFQfzXah]{+2 Bleeding}"
+				},
+				"5-5": {
+					"description": "<strong>Major Injury:</strong> Lodged bullet. Surgery required."
+				},
+				"6-6": {
+					"description": "<strong>Major Injury:</strong> Gunshot wound to the neck."
+				},
+				"7-7": {
+					"description": "<strong>Lethal Injury:</strong> Major blood loss. Bleeding +4. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.QkCJK7Vmda5bGAA7]{+4 Bleeding}"
+				},
+				"8-8": {
+					"description": "<strong>Lethal Injury:</strong> Sucking chest wound. Bleeding +5. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.CZ2gqnRHcOpCLlG0]{+5 Bleeding}"
+				},
+				"9-9": {
+					"description": "<strong>Fatal Injury:</strong> Headshot. Death Save.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Death Save}"
+				}
+			}
+		},
+		"Panic Check (Stress, Android)": {
+			"name": "Panic Check (Stress, Android)",
+			"description": "<p>Stress, Damage, and emotional wear and tear eventually bring characters to their breaking point. When that happens, there’s a chance they Panic. You determine this by making a <strong>Panic Check</strong>. Some results of the Panic Table are so severe that they leave a lasting impression on you. These are called <strong>Conditions</strong>, and they affect you until you are able to treat them.</p>",
+			"results": {
+				"1-1": {
+					"description": "<strong>Segfault:</strong> Gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}"
+				},
+				"2-2": {
+					"description": "<strong>States the Odds:</strong> of any event, Advantage on party rolls for 1hr."
+				},
+				"3-3": {
+					"description": "<strong>Explains the Etymology of Words:</strong> Knowledge checks have Advantage for 1hr."
+				},
+				"4-4": {
+					"description": "<strong>Organizes Objects into Geometric Patterns:</strong> Everyone else gains 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}"
+				},
+				"5-5": {
+					"description": "<strong>Inventories Particles of Dust by Grade:</strong> Cannot engage in other tasks, everyone else gains 2 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6jjFVScyiaBvN8kX]{+2 Stress}"
+				},
+				"6-6": {
+					"description": "<strong>Vocalization Failure:</strong> Intermittently shrieks like a fax machine under duress. Lapses into morse code, cannot communicate or sneak. Everyone else gains 2 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.bJWFhod0YA8ln8H8]{+1 Vocalization Failure}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6jjFVScyiaBvN8kX]{+2 Stress}"
+				},
+				"7-7": {
+					"description": "<strong>Incorrectly States Odds:</strong> <em>(insists impossible tasks are trivial, trivial tasks are impossible)</em> ... for the next 2d10 hours. Distracting. Anyone attempting a complex task must make a Fear save or gain 1d10 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.k2TtLFOG9mGaWVx3]{+1d10 Stress}"
+				},
+				"8-8": {
+					"description": "<strong>Repetitive Twitchy Motions:</strong> Your manual tasks have Disadvantage, everyone else gains 2 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6jjFVScyiaBvN8kX]{+2 Stress}"
+				},
+				"9-9": {
+					"description": "<strong>Loses Any Expressiveness:</strong> Discusses the irrationality of others Phobias, seeks to trigger them.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.9sKO5WUBwCW1YbR3]{+1 Ethical Directive Misread}"
+				},
+				"10-10": {
+					"description": "<strong>Unreasonable Adherence to the Present Course of Action:</strong> Take 1d10 damage from repetitive motion injury. Everyone else makes Fear save or gains 1d5 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.w3ttEaXP7yp25M5Q]{-1d10 Health}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.luNKvwmm2tjUJhT6]{+1d5 Stress}"
+				},
+				"11-11": {
+					"description": "<strong>Becomes Nihilistically Worshipful of the Source of Danger:</strong> Everyone else has Disadvantage on rolls against it. Everyone else takes a Fear save when failing to act against danger or gains a Phobia.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.wHcA2ub6CobipsfR]{+1 Worship Danger}"
+				},
+				"12-12": {
+					"description": "<strong>Killswitch Engaged:</strong> Go berserk, will not withdraw from combat regardless of situation, will not adhere to tactics.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.tQltbIC9ahDwNsTp]{+1 Killswitch Engaged}"
+				},
+				"13-13": {
+					"description": "<strong>Turing Test Failure:</strong> Have difficulty expressing humanity. Party members make a Fear Save or gain 1 Stress whenever you show up.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.3nrEYqwkhMs1Ch5v]{+1 Turing Test Failure}"
+				},
+				"14-14": {
+					"description": "<strong>System Overload:</strong> Slump Catatonic in a failed reboot cycle for [[/r 1d10]] hours."
+				},
+				"15-15": {
+					"description": "<strong>Fried Logic Core:</strong> Frenzied nonsensical behavior, everyone else makes a Panic Check.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.IgWvaabVqzKDzLL4]{Panic Check}"
+				},
+				"16-16": {
+					"description": "<strong>Damage to Threat Assessment:</strong> Betray party member at the next opportunity, believe you are aiding the crew. All Stress gained is increased by [[/r 1d10]] for the next [[/r 1d10]] hours."
+				},
+				"17-17": {
+					"description": "<strong>Compound Data Corruption:</strong> Roll twice.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Jek7hKAMDevKxlZR]{Roll on Android Panic Table}"
+				},
+				"18-18": {
+					"description": "<strong>Firmware Malfunction:</strong> Roll 1d10 on this table, behavior is permanent.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.yPGx2mXToJ2iJPbY]{Roll 1d10 on Android Panic Table}"
+				},
+				"19-19": {
+					"description": "<strong>Data Corruption:</strong> Warden takes over character permanently, nightmarish malfunctions."
+				},
+				"20-20": {
+					"description": "<strong>Slagged:</strong> Gigeresque-Scanners Head Explosion, everyone present gains a phobia and 1d5 Stress <em>(Fear Save to avoid)<em>.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.RTL29CqdaAriGSTS]{+1 Phobia}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.luNKvwmm2tjUJhT6]{+1d5 Stress}"
+				}
+			}
+		},
+		"Bleeding Wound": {
+			"name": "Bleeding Wound",
+			"description": "<p>Whenever you gain a Bleeding Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>Flesh Wound:</strong> Drop held item."
+				},
+				"1-1": {
+					"description": "<strong>Minor Injury:</strong> Lots of blood. Those Close gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}"
+				},
+				"2-2": {
+					"description": "<strong>Minor Injury:</strong> Blood in eyes. [-] until wiped clean."
+				},
+				"3-3": {
+					"description": "<strong>Minor Injury:</strong> Laceration. Bleeding +1.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BH7tgbDVH6jdcZ4u]{+1 Bleeding}"
+				},
+				"4-4": {
+					"description": "<strong>Minor Injury:</strong> Major cut. Bleeding +2.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.IIVNXuhckFQfzXah]{+2 Bleeding}"
+				},
+				"5-5": {
+					"description": "<strong>Major Injury:</strong> Fingers/toes severed. Bleeding +3.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.LawygQJAPu8XEnSc]{+3 Bleeding}"
+				},
+				"6-6": {
+					"description": "<strong>Major Injury:</strong> Hand/foot severed. Bleeding +4.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.QkCJK7Vmda5bGAA7]{+4 Bleeding}"
+				},
+				"7-7": {
+					"description": "<strong>Lethal Injury:</strong> Limb severed. Bleeding +5. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.CZ2gqnRHcOpCLlG0]{+5 Bleeding}"
+				},
+				"8-8": {
+					"description": "<strong>Lethal Injury:</strong> Major artery cut. Bleeding +6. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Tx19z2BhTY6onldp]{+6 Bleeding}"
+				},
+				"9-9": {
+					"description": "<strong>Fatal Injury:</strong> Throat slit or heart pierced. Death Save.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Death Save}"
+				}
+			}
+		},
+		"Maintenance Issues": {
+			"name": "Maintenance Issues",
+			"description": "<p>Eventually, your ship needs a tune-up, or sometimes a complete overhaul. When this happens, you’ll need to get it repaired. <strong>Minor Repairs</strong> cover cosmetic damage, cleanup, and other handyman type work that can be handled by the crew while the ship is in flight. <strong>Minor Repairs take roughly [[/r 2d10]] days.</strong> <strong>Major Repairs</strong> cover large scale structural or system damage, including repairing Megadamage and Hull. <strong>Major Repairs can only be fixed in port.</strong></p>",
+			"results": {
+				"0-0": {
+					"description": "Rancid smell permeates cabins.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ciAkQXkxSXTG8MV1]{Maintenance Issue}"
+				},
+				"1-1": {
+					"description": "Huge mess everywhere.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.pLleYaFjcIuAm4Pp]{Maintenance Issue}"
+				},
+				"2-2": {
+					"description": "Staticky comms.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.dReCCsfiV7it4lsm]{Maintenance Issue}"
+				},
+				"3-3": {
+					"description": "Faulty electrical system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.4JRD71mvWNtFUDL7]{Maintenance Issue}"
+				},
+				"4-4": {
+					"description": "Loose couplings.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.59cXdcrZlmjUcJpV]{Maintenance Issue}"
+				},
+				"5-5": {
+					"description": "Hidden (highly illegal) contraband.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.CLvIvoNryBARtU7T]{Maintenance Issue}"
+				},
+				"6-6": {
+					"description": "Autopilot systems down.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.vip6FxWcX4ReJD3b]{Maintenance Issue}"
+				},
+				"7-7": {
+					"description": "Leaking hydraulic systems.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.AQt9nXy6S0Ev50r7]{Maintenance Issue}"
+				},
+				"8-8": {
+					"description": "Creaking hull.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.QUyfvbFhCqb9d7Lu]{Maintenance Issue}"
+				},
+				"9-9": {
+					"description": "Damaged bulkheads.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.SW5kVSjiFbBxIeiu]{Maintenance Issue}"
+				},
+				"10-10": {
+					"description": "Misaligned docking clamps.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.wNm669fzbdZGwr0g]{Maintenance Issue}"
+				},
+				"11-11": {
+					"description": "Viewports blocked.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.3l0LUZpjizvZmHWs]{Maintenance Issue}"
+				},
+				"12-12": {
+					"description": "Jammed exterior airlocks.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.c8SXxPHMsG7uycas]{Maintenance Issue}"
+				},
+				"13-13": {
+					"description": "Dysfunctional gravity plating.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.9kS8VjGuSMpghdCk]{Maintenance Issue}"
+				},
+				"14-14": {
+					"description": "Out of code compliance.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Low2X1z7m1iB3rkA]{Maintenance Issue}"
+				},
+				"15-15": {
+					"description": "Controls sticking.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.BicB3xA1h978ZevJ]{Maintenance Issue}"
+				},
+				"16-16": {
+					"description": "Coolant leak.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.C9dQYp7gcjtq5QRz]{Maintenance Issue}"
+				},
+				"17-17": {
+					"description": "Miscalibrated Thruster Gimbal System.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.1HNvL7XEUcMQbLps]{Maintenance Issue}"
+				},
+				"18-18": {
+					"description": "Bevvy of OSHA violations.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.xa9MPzfrPglkSJjg]{Maintenance Issue}"
+				},
+				"19-19": {
+					"description": "Blocked air vents.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ZbAFemnvHB1YTHBK]{Maintenance Issue}"
+				},
+				"20-20": {
+					"description": "Emergency lighting only.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.wjyAZnOOafvv4xzB]{Maintenance Issue}"
+				},
+				"21-21": {
+					"description": "Internal networking issues.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.l1OGQ0IXZHjnO4Ys]{Maintenance Issue}"
+				},
+				"22-22": {
+					"description": "Inaccurate data collection.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.vleMoz5bbkZ5w28o]{Maintenance Issue}"
+				},
+				"23-23": {
+					"description": "Oxygen leak. If ship is low on O2, lose 1d5 extra per day.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.u7TchSo3qutnzaKF]{-1d5 Oxygen}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.T4wAR08WyT3g9C6D]{Maintenance Issue}"
+				},
+				"24-24": {
+					"description": "Throttled Afterburners. -2d10 Thrusters.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jmOh8n2ps0YIeBC0]{-2d10 Thrusters}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.fbrN7sbgPjIwkk7I]{Maintenance Issue}"
+				},
+				"25-25": {
+					"description": "Lemon. Maintenance Checks at [-].<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.C04VbNoj8LgfY8QK]{Maintenance Check [-]}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.7GqbGIOzA9vYOPiI]{Maintenance Issue}"
+				},
+				"26-26": {
+					"description": "Slow acceleration. +1 Week to travel.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.dgisAPnBbrIOiisk]{Maintenance Issue}"
+				},
+				"27-27": {
+					"description": "Inaccurate navigation.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.d94uF9rpmeP60Kl4]{Maintenance Issue}"
+				},
+				"28-28": {
+					"description": "Miscalibrated Targeting Sensors. -1d10 Battle.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.X3cL9eS2HOPxhLH5]{-1d10 Battle}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.3Ptitg8HBZfl2CXN]{Maintenance Issue}"
+				},
+				"29-29": {
+					"description": "Faulty Cryopods. Nightmares. Cryosickness lasts an additional week.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.mK1Acfk5NAgs1MHC]{Maintenance Issue}"
+				},
+				"30-30": {
+					"description": "Malfunctioning escape pods.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.IR1sWnYXniMg9TdP]{Maintenance Issue}"
+				},
+				"31-31": {
+					"description": "Unable to send distress signals.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.FIqSHePAeLJywerx]{Maintenance Issue}"
+				},
+				"32-32": {
+					"description": "Sabotaged coolant system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.4kmMuAbW1jnfVMYP]{Maintenance Issue}"
+				},
+				"33-33": {
+					"description": "Death trap. [-] on all rolls.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ALplRgZtneMRdloo]{Maintenance Issue}"
+				},
+				"34-34": {
+					"description": "Worn landing struts.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.2pxf4O2NrLdwYRtO]{Maintenance Issue}"
+				},
+				"35-35": {
+					"description": "Out-of-date air filters.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.64AQJ3zQDOb7NOR1]{Maintenance Issue}"
+				},
+				"36-36": {
+					"description": "Corroded pipes.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.PKBXKvgWZwafKWJ3]{Maintenance Issue}"
+				},
+				"37-37": {
+					"description": "Innaccurate orbital transfer navigation.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.NgKPVhRkD8Gteo5Z]{Maintenance Issue}"
+				},
+				"38-38": {
+					"description": "Worn out fuel injection nozzles.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.5d220ZzrEV3qx6Fy]{Maintenance Issue}"
+				},
+				"39-39": {
+					"description": "Inoperative exterior lighting system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.IGx8nQrwfz07r6TR]{Maintenance Issue}"
+				},
+				"40-40": {
+					"description": "Defective intercom system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.pW1FUDxp2N0M0D1y]{Maintenance Issue}"
+				},
+				"41-41": {
+					"description": "Inadequate waste recycling.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.UPAxtEOrSF3Il4uA]{Maintenance Issue}"
+				},
+				"42-42": {
+					"description": "Faulty altitude control thrusters.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.m04JdXL1xGQOkDyp]{Maintenance Issue}"
+				},
+				"43-43": {
+					"description": "Insufficient Life Support redundancy.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.OWkfB73RTSLDMlsU]{Maintenance Issue}"
+				},
+				"44-44": {
+					"description": "Delayed communication relays.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.hNJYqetiMKUlZzYH]{Maintenance Issue}"
+				},
+				"45-45": {
+					"description": "Damaged fuel lines.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.rlW0LUlsK7vDGZEh]{Maintenance Issue}"
+				},
+				"46-46": {
+					"description": "Corroded exhaust manifolds.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.IDiwAbD8DTbec7S1]{Maintenance Issue}"
+				},
+				"47-47": {
+					"description": "Terminal displays non-functional.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.EteEoBrlnzcySppN]{Maintenance Issue}"
+				},
+				"48-48": {
+					"description": "Check engine light won’t turn off.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.guvCGNRa75AB2Avg]{Maintenance Issue}"
+				},
+				"49-49": {
+					"description": "Failed backup systems.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.cbXMdd4ugxSOT5TU]{Maintenance Issue}"
+				},
+				"50-50": {
+					"description": "Faulty door locks.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.kftgvuQoefQ7pl28]{Maintenance Issue}"
+				},
+				"51-51": {
+					"description": "Buggy communications.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Odpb5coSTST7kCkc]{Maintenance Issue}"
+				},
+				"52-52": {
+					"description": "Infected food storage facilities.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.vMRVXZxu6ozj0iw2]{Maintenance Issue}"
+				},
+				"53-53": {
+					"description": "Corrupted data banks.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.4Lqg0lqjjTlNlr0j]{Maintenance Issue}"
+				},
+				"54-54": {
+					"description": "Jammed cargo bay doors.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Ka8elMGKtcakUIxx]{Maintenance Issue}"
+				},
+				"55-55": {
+					"description": "Flickering interior lights.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.TAerNMqv19pANCxq]{Maintenance Issue}"
+				},
+				"56-56": {
+					"description": "Failed airlock seals.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.vv1VykTwiQmgEj6N]{Maintenance Issue}"
+				},
+				"57-57": {
+					"description": "Fuel Leak. Burn +1 Fuel everytime you spend fuel.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.GW1KGmYdxYYf4ZWT]{Maintenance Issue}"
+				},
+				"58-58": {
+					"description": "Jump Bug. 10% chance Jump takes 2d10 months, not 2d10 days.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.FLaPtHcegheN7wHw]{Maintenance Issue}"
+				},
+				"59-59": {
+					"description": "Fragile. Always take +1 MDMG.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.g9Z7He5zPHNrxYe1]{Maintenance Issue}"
+				},
+				"60-60": {
+					"description": "Cracked heat shields.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.IiPryFS9MOGZXeuG]{Maintenance Issue}"
+				},
+				"61-61": {
+					"description": "Outdated software. -1d10 Systems.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.oDftFxRKkCQRNY2O]{-1d10 Systems}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.FmPqHYH3UoGpaWYL]{Maintenance Issue}"
+				},
+				"62-62": {
+					"description": "Inadequate Water Filtration. Parasites in the water supply.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.NLwybTzXJ1bndki3]{Maintenance Issue}"
+				},
+				"63-63": {
+					"description": "Malfunctioning waste management system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.oySXnFIbRW0WRoeF]{Maintenance Issue}"
+				},
+				"64-64": {
+					"description": "Fusion Reactors overheating.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.RiHvRQ9nZDygwvvB]{Maintenance Issue}"
+				},
+				"65-65": {
+					"description": "Failed radiation filter.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.wCYGQrI9qonhWy8F]{Maintenance Issue}"
+				},
+				"66-66": {
+					"description": "Radiation leak. Entire ship is at Radiation Level 2.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.5J4r3yw4xDj890yZ]{Maintenance Issue}"
+				},
+				"67-67": {
+					"description": "Miscalibrated guidance system.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.XmIcQgho4un7hYki]{Maintenance Issue}"
+				},
+				"68-68": {
+					"description": "Overloaded power storage.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.KhlrUaPjVIoyhnaL]{Maintenance Issue}"
+				},
+				"69-69": {
+					"description": "Malfunctioning sensor arrays.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.LRumIQdUBzD0Jc0X]{Maintenance Issue}"
+				},
+				"70-70": {
+					"description": "Failed Water Recovery System.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.e144cIdUEyTJgN1G]{Maintenance Issue}"
+				},
+				"71-71": {
+					"description": "Micrometoroid hull damage.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.b2b3j5JtanbyWlNd]{Maintenance Issue}"
+				},
+				"72-72": {
+					"description": "Faulty Carbon Dioxide Removal Assembly.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.5OBjTojgrp5N9mEw]{Maintenance Issue}"
+				},
+				"73-73": {
+					"description": "Solar panel degradation.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.8s1eBY5bEcQQTCz0]{Maintenance Issue}"
+				},
+				"74-74": {
+					"description": "Computer failure from cosmic radiation.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.5UiJy739gvGHkRYp]{Maintenance Issue}"
+				},
+				"75-75": {
+					"description": "Overloaded circuitry.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.yJY9CzP1KA15aMqV]{Maintenance Issue}"
+				},
+				"76-76": {
+					"description": "Malfunctioning plasma thruster.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.nHac0gkEcCNew7RX]{Maintenance Issue}"
+				},
+				"77-77": {
+					"description": "Thermal management system failure.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.DYHuVA4CQlmK2MJy]{Maintenance Issue}"
+				},
+				"78-78": {
+					"description": "Intermittent electrical outages.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.QIcoFYoC0hxW84qD]{Maintenance Issue}"
+				},
+				"79-79": {
+					"description": "Fire suppression system out of code.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.AuTERG3m7ECQKrKs]{Maintenance Issue}"
+				},
+				"80-80": {
+					"description": "Damaged floor pannelling.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.1iOSKp82goZGJZch]{Maintenance Issue}"
+				},
+				"81-81": {
+					"description": "Broken light fixture in remote corridor.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ZBUtxiX72udqLzIk]{Maintenance Issue}"
+				},
+				"82-82": {
+					"description": "Damaged coolant pump.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.iwFmPpAth3VbRRL8]{Maintenance Issue}"
+				},
+				"83-83": {
+					"description": "Cracked viewports.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Eo0l4WMxcS62GCMP]{Maintenance Issue}"
+				},
+				"84-84": {
+					"description": "Systems overloaded with malware.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.miRqXNzkW0biml1I]{Maintenance Issue}"
+				},
+				"85-85": {
+					"description": "Leaky fuel valve.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.cOLcJ3Dnecbe6ZIU]{Maintenance Issue}"
+				},
+				"86-86": {
+					"description": "Jammed exhaust vent.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.zRzb3Laiuw4ac6p0]{Maintenance Issue}"
+				},
+				"87-87": {
+					"description": "Stuck waste disposal chute.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.EZzGAO6DneH1qmQM]{Maintenance Issue}"
+				},
+				"88-88": {
+					"description": "Lifts non-functioning.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Tp6k1gPwhQmT6hCo]{Maintenance Issue}"
+				},
+				"89-89": {
+					"description": "Damaged communications antenna.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.2Ht7fg78511Hd49u]{Maintenance Issue}"
+				},
+				"90-90": {
+					"description": "Clogged Air Filtration. Crew capacity cut in half.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.DUuRY7kHKd7n5luv]{-50% Crew Capacity}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.XLEhMV9SnSfeEE7E]{Maintenance Issue}"
+				},
+				"91-91": {
+					"description": "Malfunctioning climate control. 85º at all times.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.Z8raruNDvfNASFQi]{Maintenance Issue}"
+				},
+				"92-92": {
+					"description": "No emergency power.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.3rulbOVhyRlTizT0]{Maintenance Issue}"
+				},
+				"93-93": {
+					"description": "Weak Frame. -1 Hull, -1 Upgrade.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.uPY19Y49bGCLGK3N]{-1 Hull}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.06NSvDYTtmkeUtLq]{-1 Upgrade}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ulWxa2UtTOQihTyz]{Maintenance Issue}"
+				},
+				"94-94": {
+					"description": "Toxic chemical spill.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.EnogUslNNusSfVFy]{Maintenance Issue}"
+				},
+				"95-95": {
+					"description": "Poor scanners. Ship has to be one range band closer than normal.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.ElXLL32uNYiPmE4G]{Maintenance Issue}"
+				},
+				"96-96": {
+					"description": "Counterfit papers. Ship is stolen. There is a bounty on it.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.b081FxEAclRKji3q]{Maintenance Issue}"
+				},
+				"97-97": {
+					"description": "Corrupted A.I.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.zHsnShUX37Zvyi2O]{Maintenance Issue}"
+				},
+				"98-98": {
+					"description": "Warp Cores fail 10% of the time.<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.58KhhfMQ9p0XJZHc]{Maintenance Issue}"
+				},
+				"99-99": {
+					"description": "Rust bucket. Everything that can go wrong, does. +1 Minimum Stress to crew.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}<br><br>@UUID[Compendium.mosh.items_maintenance_1e.Item.60QSsxrVOt83OU9p]{Maintenance Issue}"
+				}
+			}
+		},
+		"Fire & Explosives Wound": {
+			"name": "Fire & Explosives Wound",
+			"description": "<p>Whenever you gain a Fire &amp; Explosives Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>Flesh Wound:</strong> Hair burnt. Gain 1d5 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.luNKvwmm2tjUJhT6]{+1d5 Stress}"
+				},
+				"1-1": {
+					"description": "<strong>Minor Injury:</strong> Awesome scar. +1 Minimum Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}"
+				},
+				"2-2": {
+					"description": "<strong>Minor Injury:</strong> Singed. [-] on next action."
+				},
+				"3-3": {
+					"description": "<strong>Minor Injury:</strong> Shrapnel/large burn."
+				},
+				"4-4": {
+					"description": "<strong>Minor Injury:</strong> 3rd degree burns."
+				},
+				"5-5": {
+					"description": "<strong>Major Injury:</strong> Major Burn. Body Save -2d10.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.ISd2nEMYvWCPQpl0]{-2d10 Body Save}"
+				},
+				"6-6": {
+					"description": "<strong>Major Injury:</strong> Skin grafts required. Body Save -2d10.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.ISd2nEMYvWCPQpl0]{-2d10 Body Save}"
+				},
+				"7-7": {
+					"description": "<strong>Lethal Injury:</strong> Limb on fire. 2d10 Damage per round. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.pS6A6OklvM6S3bvO]{-2d10 Health}"
+				},
+				"8-8": {
+					"description": "<strong>Lethal Injury:</strong> Body on fire. 3d10 Damage per round. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.nECUu4pcwsNTE8C5]{-3d10 Health}"
+				},
+				"9-9": {
+					"description": "<strong>Fatal Injury:</strong> Engulfed in fiery explosion. Death Save.<br><br>@UUID[Compendium.mosh.macros_hotbar_1e.Macro.NsRHfRuuNGPfkYVf]{Death Save}"
+				}
+			}
+		},
+		"Gore & Massive Wound": {
+			"name": "Gore & Massive Wound",
+			"description": "<p>Whenever you gain a Gore &amp; Massive Wound, roll on this table to determine the effect. <strong>Flesh Wounds</strong> are small inconveniences. <strong>Minor/Major Injuries</strong> cause lasting issues which require medical treatment. <strong>Lethal Injuries</strong> can kill you if not dealt with immediately. <strong>Fatal Injuries</strong> can kill outright. <strong>Bleeding</strong> wounds, if not treated can quickly overwhelm you.</p>",
+			"results": {
+				"0-0": {
+					"description": "<strong>Flesh Wound:</strong> Vomit. [-] on next action."
+				},
+				"1-1": {
+					"description": "<strong>Minor Injury:</strong> Awesome scar. +1 Minimum Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}"
+				},
+				"2-2": {
+					"description": "<strong>Minor Injury:</strong> Digit mangled."
+				},
+				"3-3": {
+					"description": "<strong>Minor Injury:</strong> Eyes gouged out."
+				},
+				"4-4": {
+					"description": "<strong>Minor Injury:</strong> Ripped off flesh. -1d10 Strength.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.V3L1iRkWwyTzCZK9]{-1d10 Strength}"
+				},
+				"5-5": {
+					"description": "<strong>Major Injury:</strong> Paralysed waist down."
+				},
+				"6-6": {
+					"description": "<strong>Major Injury:</strong> Limb severed. Bleeding +5.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.CZ2gqnRHcOpCLlG0]{+5 Bleeding}"
+				},
+				"7-7": {
+					"description": "<strong>Lethal Injury:</strong> Impaled. Bleeding +6. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Tx19z2BhTY6onldp]{+6 Bleeding}"
+				},
+				"8-8": {
+					"description": "<strong>Lethal Injury:</strong> Guts spooled on floor. Bleeding +7. Death Save in [[/r 1d10]] rounds.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.ZJaVFBB0Kslv1k4f]{+7 Bleeding}"
+				},
+				"9-9": {
+					"description": "<strong>Fatal Injury:</strong> Head explodes.<br><br><strong>No Death Save. You have died.</strong>"
+				}
+			}
+		},
+		"Panic Check (Stress, Normal)": {
+			"name": "Panic Check (Stress, Normal)",
+			"description": "<p>Stress, Damage, and emotional wear and tear eventually bring characters to their breaking point. When that happens, there’s a chance they Panic. You determine this by making a <strong>Panic Check</strong>. Some results of the Panic Table are so severe that they leave a lasting impression on you. These are called <strong>Conditions</strong>, and they affect you until you are able to treat them.</p>",
+			"results": {
+				"1-1": {
+					"description": "<strong>ADRENALINE RUSH.</strong> [+] on all rolls for the next [[/r 2d10]] minutes. Reduce Stress by 1d5.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AvKZE5IFubIaAIUy]{-1d5 Stress}"
+				},
+				"2-2": {
+					"description": "<strong>NERVOUS.</strong> Gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}"
+				},
+				"3-3": {
+					"description": "<strong>JUMPY.</strong> Gain 1 Stress. All Close crewmembers gain 2 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.6jjFVScyiaBvN8kX]{+2 Stress}"
+				},
+				"4-4": {
+					"description": "<strong>OVERWHELMED.</strong> [-] on all rolls for the next [[/r 1d10]] minutes. Increase Minimum Stress by 1.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}"
+				},
+				"5-5": {
+					"description": "<strong>COWARD.</strong> Gain a new <strong>Condition:</strong> You must make a Fear Save to engage in violence, otherwise you flee.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.b0jk4XwP7by8a3uc]{+1 Coward}"
+				},
+				"6-6": {
+					"description": "<strong>FRIGHTENED.</strong> Gain a new <strong>Condition:</strong> When encountering what frightened you, make a Fear Save [-] or gain 1d5 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BEQvMZ5N7QOBqnId]{+1 Frightened}"
+				},
+				"7-7": {
+					"description": "<strong>NIGHTMARES.</strong> Gain a new <strong>Condition:</strong> Sleep is difficult, gain [-] on Rest Saves.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.AZbaGWu663wio9mI]{+1 Nightmares}"
+				},
+				"8-8": {
+					"description": "<strong>LOSS OF CONFIDENCE.</strong> Gain a new <strong>Condition:</strong> Choose one Skill and lose that Skill’s bonus.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.54Krt3opbJe1WATH]{+1 Loss of Confidence}"
+				},
+				"9-9": {
+					"description": "<strong>DEFLATED.</strong> Gain a new <strong>Condition:</strong> Whenever a Close crewmember fails a Save, gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.2aD5avpn35wdzdm5]{+1 Deflated}"
+				},
+				"10-10": {
+					"description": "<strong>DOOMED.</strong> Gain a new <strong>Condition:</strong> You feel cursed and unlucky. All Critical Successes are instead Critical Failures.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.8IPhlAuMEQJC6zxA]{+1 Doomed}"
+				},
+				"11-11": {
+					"description": "<strong>SUSPICIOUS.</strong> For the next week, whenever someone joins the crew <em>(even if they only left for a short period of time),</em> make a Fear Save or gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.5K7wZEvEXjOH4IM7]{+1 Suspicious}"
+				},
+				"12-12": {
+					"description": "<strong>HAUNTED.</strong> Gain a new <strong>Condition:</strong> Something starts visiting you at night. In your dreams. Out of the corner of your eye. And soon it will start making demands.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Eo56QFyTeoCcFmD8]{+1 Haunted}"
+				},
+				"13-13": {
+					"description": "<strong>DEATH WISH.</strong> For the next 24 hours, whenever encountering a stranger or known enemy, make a Sanity Save or immediately attack them.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.Yh2CTFXfWMe9o2lv]{+1 Death Wish}"
+				},
+				"14-14": {
+					"description": "<strong>PROPHETIC VISION.</strong> You immediately experience an intense hallucination or vision of an impending terror or horrific event. Increase Minimum Stress by 2.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.bFPoNLOGusT1ocqt]{+2 Minimum Stress}"
+				},
+				"15-15": {
+					"description": "<strong>CATATONIC.</strong> Become unresponsive and unmoving for [[/r 2d10]] minutes. Reduce Stress by 1d10.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.jHyqXb2yDFTNWxpy]{-1d10 Stress}"
+				},
+				"16-16": {
+					"description": "<strong>RAGE.</strong> [+] on all Damage rolls for the next [[/r 1d10]] hours. All crewmembers gain 1 Stress.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.dvJR9DYXI2kV0BbR]{+1 Stress}"
+				},
+				"17-17": {
+					"description": "<strong>SPIRALING.</strong> Gain a new <strong>Condition:</strong> Panic Checks are at [-].<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.3AjUWUSRvYy8Mwji]{+1 Spiraling}"
+				},
+				"18-18": {
+					"description": "<strong>COMPOUNDING PROBLEMS.</strong> Roll twice on this table. Increase your Minimum Stress by 1.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.2DnKZpyj03HvpeCy]{Roll on Panic Table}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}"
+				},
+				"19-19": {
+					"description": "<strong>HEART ATTACK / SHORT CIRCUIT (ANDROIDS).</strong> Reduce Maximum Wounds by 1. Gain [-] on all rolls for [[/r 1d10]] hours. Increase your Minimum Stress by 1.<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.qD8Mvegkf3zVarFr]{-1 Maximum Wound}<br><br>@UUID[Compendium.mosh.macros_triggered_1e.Macro.BmEHWH7YxV9qb21p]{+1 Minimum Stress}"
+				},
+				"20-20": {
+					"description": "<strong>RETIRE.</strong> Roll up a new character to play."
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,155 @@
+{
+	"label": "Condiciones (1e)",
+	"entries": {
+		"Insane": {
+			"name": "Demente"
+		},
+		"Starving": {
+			"name": "Starving"
+		},
+		"Suspicious": {
+			"name": "Suspicaz"
+		},
+		"Extreme Heat": {
+			"name": "Calor extremo"
+		},
+		"Spiraling": {
+			"name": "En caída libre"
+		},
+		"Severe Anxiety": {
+			"name": "Severe Anxiety"
+		},
+		"Panicky": {
+			"name": "Asustadizo"
+		},
+		"Bit Rot": {
+			"name": "Degradación de bits"
+		},
+		"Threat Assessment Failure": {
+			"name": "Threat Assessment Failure"
+		},
+		"Anhedonia": {
+			"name": "Anhedonia"
+		},
+		"Worship Danger": {
+			"name": "Worship Danger"
+		},
+		"Nightmares": {
+			"name": "Pesadillas"
+		},
+		"Phobia": {
+			"name": "Phobia"
+		},
+		"Ethical Directive Misread": {
+			"name": "Directiva ética malinterpretada"
+		},
+		"The Bends": {
+			"name": "Síndrome de descompresión"
+		},
+		"Deviant Logic Core": {
+			"name": "Deviant Logic Core"
+		},
+		"Recurring Nightmares": {
+			"name": "Recurring Nightmares"
+		},
+		"Toxic Atmosphere": {
+			"name": "Atmósfera tóxica"
+		},
+		"Suffocating": {
+			"name": "Suffocating"
+		},
+		"Coward": {
+			"name": "Cobarde"
+		},
+		"Vocalization Failure": {
+			"name": "Vocalization Failure"
+		},
+		"Broken": {
+			"name": "Broken"
+		},
+		"Turing Test Failure": {
+			"name": "Turing Test Failure"
+		},
+		"Corrosive Atmosphere": {
+			"name": "Atmósfera corrosiva"
+		},
+		"The Shakes": {
+			"name": "The Shakes"
+		},
+		"Software Bloat": {
+			"name": "Sobrecarga de software"
+		},
+		"Killswitch Engaged": {
+			"name": "Killswitch Engaged"
+		},
+		"Irradiated": {
+			"name": "Irradiado"
+		},
+		"Social Anxiety": {
+			"name": "Social Anxiety"
+		},
+		"Emotional Detachment": {
+			"name": "Emotional Detachment"
+		},
+		"Cryosickness": {
+			"name": "Mal criogénico"
+		},
+		"Exhausted": {
+			"name": "Agotado"
+		},
+		"Losing Your Grip": {
+			"name": "Perdiendo el control"
+		},
+		"Fried Logic Core": {
+			"name": "Núcleo lógico frito"
+		},
+		"Loss of Confidence": {
+			"name": "Pérdida de confianza"
+		},
+		"Twitchy": {
+			"name": "Twitchy"
+		},
+		"Rampancy": {
+			"name": "Rampancy"
+		},
+		"Hallucinations": {
+			"name": "Hallucinations"
+		},
+		"Psychotic Episodes": {
+			"name": "Psychotic Episodes"
+		},
+		"Haunted": {
+			"name": "Atormentado"
+		},
+		"Ethical Directive Failure": {
+			"name": "Ethical Directive Failure"
+		},
+		"Bleeding": {
+			"name": "Hemorragia"
+		},
+		"Escapism": {
+			"name": "Evasión"
+		},
+		"Death Wish": {
+			"name": "Deseo de muerte"
+		},
+		"Hypervigilance": {
+			"name": "Hipervigilancia"
+		},
+		"Faulty Heuristics": {
+			"name": "Heurística defectuosa"
+		},
+		"Extreme Cold": {
+			"name": "Frío extremo"
+		},
+		"Deflated": {
+			"name": "Desmoralizado"
+		},
+		"Doomed": {
+			"name": "Condenado"
+		},
+		"Frightened": {
+			"name": "Aterrorizado"
+		}
+	}
+}

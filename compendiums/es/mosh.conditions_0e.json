@@ -1,0 +1,113 @@
+{
+	"label": "Condiciones (0e)",
+	"entries": {
+		"Losing Your Grip": {
+			"name": "Perdiendo el control"
+		},
+		"Software Bloat": {
+			"name": "Sobrecarga de software"
+		},
+		"Bit Rot": {
+			"name": "Degradación de bits"
+		},
+		"Addiction": {
+			"name": "Adicción"
+		},
+		"Ethical Directive Misread": {
+			"name": "Directiva ética malinterpretada"
+		},
+		"Escapism": {
+			"name": "Evasión"
+		},
+		"Faulty Heuristics": {
+			"name": "Heurística defectuosa"
+		},
+		"The Bends": {
+			"name": "Síndrome de descompresión"
+		},
+		"Insane": {
+			"name": "Demente"
+		},
+		"Hypervigilance": {
+			"name": "Hipervigilancia"
+		},
+		"Panicky": {
+			"name": "Asustadizo"
+		},
+		"Fried Logic Core": {
+			"name": "Núcleo lógico frito"
+		},
+		"Rampancy": {
+			"name": "Rampancy"
+		},
+		"Psychotic Episodes": {
+			"name": "Psychotic Episodes"
+		},
+		"Severe Anxiety": {
+			"name": "Severe Anxiety"
+		},
+		"The Shakes": {
+			"name": "The Shakes"
+		},
+		"Deviant Logic Core": {
+			"name": "Deviant Logic Core"
+		},
+		"Anhedonia": {
+			"name": "Anhedonia"
+		},
+		"Cowardice": {
+			"name": "Cowardice"
+		},
+		"Hallucinations": {
+			"name": "Hallucinations"
+		},
+		"Starving": {
+			"name": "Starving"
+		},
+		"Worship Danger": {
+			"name": "Worship Danger"
+		},
+		"Broken": {
+			"name": "Broken"
+		},
+		"Emotional Detachment": {
+			"name": "Emotional Detachment"
+		},
+		"Killswitch Engaged": {
+			"name": "Killswitch Engaged"
+		},
+		"Turing Test Failure": {
+			"name": "Turing Test Failure"
+		},
+		"Ethical Directive Failure": {
+			"name": "Ethical Directive Failure"
+		},
+		"Phobia": {
+			"name": "Phobia"
+		},
+		"Paranoid": {
+			"name": "Paranoid"
+		},
+		"Twitchy": {
+			"name": "Twitchy"
+		},
+		"Suffocating": {
+			"name": "Suffocating"
+		},
+		"Death Drive": {
+			"name": "Death Drive"
+		},
+		"Vocalization Failure": {
+			"name": "Vocalization Failure"
+		},
+		"Social Anxiety": {
+			"name": "Social Anxiety"
+		},
+		"Threat Assessment Failure": {
+			"name": "Threat Assessment Failure"
+		},
+		"Recurring Nightmares": {
+			"name": "Recurring Nightmares"
+		}
+	}
+}
