@@ -1,3 +1,3 @@
 files:
-  - source: compendiums/en/*.json
-    translation: compendiums/%two_letters_code%/%original_file_name%.json
+  - source: /compendiums/en/*.json
+    translation: /compendiums/es/%original_file_name%.json
