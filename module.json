@@ -1,1 +1,26 @@
+{
+  "id": "foundry-mothership-es",
+  "title": "Mothership RPG - Traducción al Español",
+  "description": "Módulo de traducción comunitaria para el sistema Mothership 1e/0e.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "authors": [
+    { "name": "_____" }
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      { "id": "babele", "type": "module" }
+    ]
+  }
+}
 
